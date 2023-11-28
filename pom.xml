@@ -63,11 +63,13 @@
 			<version>2.24.2</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.camel/camel-restlet -->
 		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-restlet</artifactId>
-			<version>2.25.4</version>
-		</dependency> 
+		    <groupId>org.apache.camel</groupId>
+		    <artifactId>camel-restlet</artifactId>
+		    <version>2.25.4</version>
+		</dependency>
+
 		<dependency>
 				<groupId>org.apache.logging.log4j</groupId>
 				<artifactId>log4j-slf4j-impl</artifactId>
@@ -121,19 +123,5 @@
 			
 		</plugins>
 	</build>
-	<profiles>
-		  <profile>
-		    <id>allow-snapshots</id>
-		    <activation><activeByDefault>true</activeByDefault></activation>
-		    <repositories>
-		      <repository>
-		        <id>insecure-maven-repository</id>
-		        <url>http://maven.restlet.com</url>
-		        <releases><enabled>true</enabled></releases>
-		        <snapshots><enabled>true</enabled></snapshots>
-		      </repository>
-		    </repositories>
-		  </profile>
-</profiles>
 
 </project>
