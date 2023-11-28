@@ -121,5 +121,19 @@
 			
 		</plugins>
 	</build>
+	<profiles>
+		  <profile>
+		    <id>allow-snapshots</id>
+		    <activation><activeByDefault>true</activeByDefault></activation>
+		    <repositories>
+		      <repository>
+		        <id>insecure-maven-repository</id>
+		        <url>http://maven.restlet.com</url>
+		        <releases><enabled>true</enabled></releases>
+		        <snapshots><enabled>true</enabled></snapshots>
+		      </repository>
+		    </repositories>
+		  </profile>
+</profiles>
 
 </project>
