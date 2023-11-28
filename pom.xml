@@ -63,6 +63,7 @@
 			<version>2.24.2</version>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
     <groupId>org.apache.camel</groupId>
     <artifactId>camel-restlet</artifactId>
@@ -70,10 +71,11 @@
     <exclusions>
         <exclusion>
             <groupId>org.restlet.jee</groupId>
-            <artifactId>org.restlet</artifactId>
+            <artifactId>org.restlet.ext.httpclient</artifactId>
         </exclusion>
     </exclusions>
 </dependency>
+
 
 
 
